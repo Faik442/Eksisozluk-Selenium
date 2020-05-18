@@ -4,6 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
 
+
 with open('eksisozluk.csv', 'w') as f:
     f.write("Yorum , Yazar, Tarih \n")
 
@@ -28,7 +29,7 @@ NextPageCSS = '.next'
 LoginElement = WebDriverWait(driver, 60).until(lambda driver: driver.find_element_by_xpath(LoginXpath))
 LoginElement.click()
 
-UsernameElement = WebDriverWait(driver, 5000).until(EC.presence_of_element_located((By.XPATH, UsernameXpath)))
+UsernameElement = WebDriverWait(driver, 60).until(EC.presence_of_element_located((By.XPATH, UsernameXpath)))
 UsernameElement.click()
 UsernameElement.send_keys(USER)
 
