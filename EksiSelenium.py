@@ -8,8 +8,8 @@ from time import sleep
 with open('eksisozluk.csv', 'w') as f:
     f.write("Yorum , Yazar, Tarih \n")
 
-USER = 'fyucesoy91@gmail.com'
-PASS = 'Aq1sw2de3'
+USER = 'USERNAME' //can be anything
+PASS = 'PASSWORD'  //can be anything
 searchitem = 'koronavirüs'
 
 driver_path = '/home/faik/chromedriver_linux64/chromedriver'
